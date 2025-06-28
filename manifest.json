@@ -1,8 +1,8 @@
 {
+    "manifest_version": 3,
     "name": "IMPACT Quest Skip",
     "version": "0.1.0",
     "description": "Skips code ninjas projects. Made by Joshua Novak at Code Ninjas West Katy",
-    "host_permissions": "https://*.codeninjas.com/*",
     "action": {
         "default_icon": {
             "48": "assets/icon-48.png",

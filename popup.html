@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Code Ninjas Project Skipper</title>
+    <style>
+      .popup-container {
+        width: 500px;
+        height: 300px;
+        overflow-y: auto;
+        background-color: #1277c7;
+        border-radius: 20px;
+        font-family: "Comic Sans MS";
+        color: white;
+      }
+
+      .title {
+        margin: 20px auto;
+        text-align: center;
+        color: white;
+      }
+
+      .form-row {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .submit-button {
+        margin: auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup-container">
+      <h1 class="title">IMPACT PROJECT SKIPPER</h1>
+      <form class="info-form">
+        <div class="form-row">
+          <label for="authcode"> Authorization Token: </label
+          ><input type="text" name="authcode" />
+        </div>
+        <br />
+        <div class="form-row">
+          <label for="project"> Project </label>
+          <select>
+            <option value="WB1">White Belt 1</option>
+            <option value="WB2">White Belt 2</option>
+            <option value="WB3">White Belt 3</option>
+            <option value="WB4">White Belt 4</option>
+            <option value="WB5">White Belt 5</option>
+            <option value="WB6">White Belt 6</option>
+            <option value="WB7">White Belt 7</option>
+            <option value="WB8">White Belt 8</option>
+            <option value="YB1">Yellow Belt 1</option>
+            <option value="YB2">Yellow Belt 2</option>
+            <option value="YB3">Yellow Belt 3</option>
+            <option value="YB4">Yellow Belt 4</option>
+            <option value="YB5">Yellow Belt 5</option>
+            <option value="YB6">Yellow Belt 6</option>
+            <option value="YB7">Yellow Belt 7</option>
+            <option value="YB8">Yellow Belt 8</option>
+            <option value="YB9">Yellow Belt 9</option>
+            <option value="YB10">Yellow Belt 10</option>
+          </select>
+        </div>
+        <br />
+        <input class="submit-button" type="submit" value="Upload Project" />
+      </form>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
