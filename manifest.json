@@ -1,14 +1,25 @@
 {
-    "manifest_version": 3,
-    "name": "IMPACT Quest Skip",
-    "version": "0.1.0",
-    "description": "Skips code ninjas projects. Made by Joshua Novak at Code Ninjas West Katy",
-    "action": {
-        "default_icon": {
-            "48": "assets/icon-48.png",
-            "128": "assets/icon-128.png"
-        },
-        "default_title": "IMPACT Quest Skip",
-        "default_popup": "popup.html"
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "host_permissions": ["https://*.codeninjas.com/*"],
+  "name": "IMPACT Quest Skip",
+  "version": "0.1.0",
+  "description": "Skips code ninjas projects. Made by Joshua Novak at Code Ninjas West Katy",
+  "content_scripts": [
+    {
+      "matches": ["https://*.codeninjas.com/*"],
+      "js": ["contentScript.js"]
     }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    },
+    "default_title": "IMPACT Quest Skip",
+    "default_popup": "popup.html"
+  }
 }

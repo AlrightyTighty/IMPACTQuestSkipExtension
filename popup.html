@@ -34,12 +34,7 @@
   <body>
     <div class="popup-container">
       <h1 class="title">IMPACT PROJECT SKIPPER</h1>
-      <form class="info-form">
-        <div class="form-row">
-          <label for="authcode"> Authorization Token: </label
-          ><input type="text" name="authcode" />
-        </div>
-        <br />
+      <form class="info-form" action="" onsubmit="return false;">
         <div class="form-row">
           <label for="project"> Project </label>
           <select name="project">
@@ -66,7 +61,8 @@
         <br />
         <input class="submit-button" type="submit" value="Upload Project" />
       </form>
+      <p style="text-align: center">Made by Josh from CN West Katy.</p>
     </div>
-    <script src="popup.js"></script>
+    <script defer src="popup.js"></script>
   </body>
 </html>
